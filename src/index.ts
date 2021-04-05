@@ -1,6 +1,16 @@
+import db from './firebase/config';
+
+const usuario={
+    nombre: 'Josua',
+    activo: true,
+    fechaNaci: 0
+    
+}
 
 
-
-const mensaje = 'Hola Mundo!';
-
-console.log( mensaje );
+ //db.collection('usuarios')
+ // .add(usuario )
+ // .then( docRef => {
+ //     console.log( docRef )
+ // })
+//  .catch( e => console.log( 'error' , e ))
