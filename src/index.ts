@@ -32,3 +32,12 @@ const usuariosRef= db.collection('usuarios');
 //     activo: true,
 //     edad:44
 // });
+
+
+//delete from usuarios where id='xx'
+
+usuariosRef
+.doc('8VtQbf8xeakjjk3YRePL')
+.delete()
+.then( resp => console.log('Borrado') )
+.catch( e => console.log('error' , e ));
