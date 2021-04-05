@@ -6,7 +6,7 @@ const usuario={
     fechaNaci: 0
     
 }
-
+const usuariosRef= db.collection('usuarios');
 
  //db.collection('usuarios')
  // .add(usuario )
@@ -14,3 +14,21 @@ const usuario={
  //     console.log( docRef )
  // })
 //  .catch( e => console.log( 'error' , e ))
+
+
+
+
+//usuariosRef
+// .doc('8VtQbf8xeakjjk3YRePL')
+// .update({
+//     activo: true
+// });
+
+
+//destructivo
+//usuariosRef
+// .doc('8VtQbf8xeakjjk3YRePL')
+// .set({
+//     activo: true,
+//     edad:44
+// });
