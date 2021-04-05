@@ -48,7 +48,43 @@ const usuariosRef= db.collection('usuarios');
 //usuariosRef
 //.onSnapshot( retornaDocumentos )
 
-usuariosRef
+//usuariosRef
+//.get().then(  retornaDocumentos );
+
+/*
+select * from usuario
+ where activo= true
+*/
+
+//usuariosRef.where('activo' , '==' , true).get().then(  retornaDocumentos );
+
+
+/*
+select * from usuario
+ where salario > 1800
+*/
+
+//usuariosRef.where('salario' , '>' , 1800)
+//.get().then(  retornaDocumentos );
+
+
+
+/*
+select * from usuario
+ where salario > 1300 and salario < 2500
+*/
+
+//usuariosRef.where('salario' , '>=' , 1800)
+//.where('salario', '<=', 2500)
+//.get().then(  retornaDocumentos );
+
+
+/*
+select * from usuario
+ where salario > 1800 
+ And activo == true
+ */
+
+usuariosRef.where('salario' , '>=' , 1800)
+.where('activo', '==', true)
 .get().then(  retornaDocumentos );
-
-
